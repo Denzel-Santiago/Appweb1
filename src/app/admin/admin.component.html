@@ -1,0 +1,24 @@
+<div class="user-view">
+    <header>
+      <h1>RESEÑAS DE VIDEOJUEGOS</h1>
+      <button (click)="goToLogin()" class="btn">Regresar al Login</button>
+    </header>
+  
+    <button (click)="goToAddPost()" class="btn">Agregar publicación</button>
+  
+    <div class="second-box">
+      <div *ngFor="let post of posts; let i = index" class="card">
+        <img [src]="post.image" alt="Imagen del juego" class="card-image">
+        <div class="card-content">
+          <p>{{ post.reviewText }}</p>
+        </div>
+        <div class="card-buttons">
+          <button (click)="commentPost(i)" class="btn">Comentar</button>
+          <button (click)="ratePost(i)" class="btn">Calificar</button>
+          <button (click)="editPost(i)" class="btn">Editar</button>
+          <button (click)="deletePost(i)" class="btn">Eliminar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

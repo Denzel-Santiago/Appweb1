@@ -1,0 +1,28 @@
+<div class="box">
+    <form class="form" (ngSubmit)="onSubmit()" >
+        <p class="title">Registro</p>
+        <p class="message">Ingresa para disfrutar de nuestras reseñas</p>
+      
+        <label>
+          <input class="input" type="email" [(ngModel)]="email" name="email" required>
+          <span>Email</span>
+        </label>
+        
+        <label>
+          <input class="input" type="password" [(ngModel)]="password" name="password" required>
+          <span>Password</span>
+        </label>
+        
+        <label>
+          <input class="input" type="password" [(ngModel)]="confirmPassword" name="confirmPassword" required>
+          <span>Confirm password</span>
+        </label>
+      
+      
+        <button class="submit" type="submit">Submit</button>
+      </form>
+      
+      
+</div>
+
+

@@ -1,0 +1,107 @@
+.box{
+    padding: 0;         
+    position: absolute;  
+    top: 0;             
+    left: 0;            
+    width: 100%;       
+    height: 100%;      
+    display: flex;     
+    align-items: center; 
+    justify-content: center; 
+    background-color: #000000;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #334504;
+    color: #ffffff;
+    border: 1px solid #000000;
+  }
+  
+  .title {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    color: #fdfdfd;
+    position: relative;
+  }
+
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  
+  .message, 
+  .signin {
+    font-size: 14.5px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a {
+    color: #334504;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    background-color: #433d3d9b;
+    color: #ffffff;
+    width: 100%;
+    padding: 20px 5px 5px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.4);
+    border-radius: 10px;
+  }
+  
+  .form label .input + span {
+    color: rgba(255, 255, 255, 0.663);
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    font-size: 0.9em;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 12.5px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,
+  .form label .input:valid + span {
+    color: #334504;
+    top: 0px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .submit {
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    background-color: #000000;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit:hover {
+    background-color: #556633;
+  }
+  
